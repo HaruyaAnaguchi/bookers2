@@ -24,6 +24,7 @@
             </th>
             <th><%= link_to f.title, book_path(f.id) %></th>
             <th><%= f.body %></th>
+            <th>コメント数:<%= f.book_comments.count %></th>
           </tr>
           <% end %>
         </tbody>
