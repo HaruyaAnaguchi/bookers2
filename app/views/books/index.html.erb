@@ -31,7 +31,7 @@
           <tr>
             <th>
               <%= link_to user_path(f.user.id) do %>
-                <%= image_tag @user.get_profile_image(100, 100) %>
+                <%= image_tag f.user.get_profile_image(100, 100) %>
               <% end %>
             </th>
             <th><%= link_to f.title, book_path(f.id)%></th>
